@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra homework</title>
+</head>
+
+<body>
+    <h1>Let's do it</h1>
+    <table>
+        <tr>
+            <th>ID: <a href="https://www.facebook.com/alinka.natali/" target="_blank">Facebook</a></th>
+            <th>Name:</th>
+            <th>Surname:</th>
+            <th>Age:</th>
+            <th>Email:</th>
+        </tr>
+        <tr>
+            <th>ID: <a href="https://www.facebook.com/alinka.natali/" target="_blank">Facebook</a></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>ID: <a href="https://www.facebook.com/alinka.natali/" target="_blank">Facebook</a></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>ID: <a href="https://www.facebook.com/alinka.natali/" target="_blank">Facebook</a></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+    <form>
+        <label for="">textChange</label>
+        <input type="text" id="username" name="username" placeholder="textChange">
+    </form>
+    <button onclick="textChange()">Change the Text</button>
+
+    <script>
+
+
+        const textChange = function () {
+            let textBox = document.querySelector("input");
+            let boxValue = textBox.value
+            let myButton = document.querySelector("h1");
+            document.querySelector("h1").innerText = boxValue;
+        };
+
+    </script>
+
+</body>
+
+</html>
