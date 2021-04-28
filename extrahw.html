@@ -51,10 +51,37 @@
 
         const textChange = function () {
             let textBox = document.querySelector("input");
+            if (textBox.value !== ""){
+
+            
             let boxValue = textBox.value
             let myButton = document.querySelector("h1");
             document.querySelector("h1").innerText = boxValue;
+
+            textBox.value=" "
+            }else{
+                alert("Write the Text")
+            }
         };
+        const addSection = function(){
+            let newSection = document.createElement("section");
+            document.querySelector("body").appendChild(newSection);
+        };
+        addSection();
+
+        const addDiv=function(){
+            const newDiv = document.createElement("div");
+            document.querySelector("section").appendChild(newDiv);
+        };
+        addDiv();
+
+        const createTRs = function(){
+            for(i=0; i<5; i++){
+                let newTr = document.createElement("tr")
+                document
+            }
+
+        }
 
     </script>
 
